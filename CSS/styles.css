@@ -5,10 +5,12 @@
 /* Componets */
 @import "components/status-bar.css";
 @import "components/navigation-bar.css";
+@import "components/screen-header.css";
 
 /* Screens */
 @import "screens/login.css";
 
 body {
   font-family: "Open Sans", sans-serif;
+  padding-top: 30px;
 }
