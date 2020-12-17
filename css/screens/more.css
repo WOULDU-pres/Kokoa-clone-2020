@@ -1,0 +1,22 @@
+.blank {
+  margin-top: 30px;
+}
+
+.fa-lightbulb {
+  color: tomato;
+}
+
+.suggestions {
+  padding-top: 25px;
+  border-top: 1px solid rgb(0, 0, 0, 0.3);
+}
+
+.suggestions__title {
+  font-size: 18px;
+}
+
+.find-icons__icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}

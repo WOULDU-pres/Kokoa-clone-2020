@@ -1,0 +1,44 @@
+.settings-header {
+  display: flex;
+  width: 100%;
+}
+
+.settings-header__column {
+  width: 33%;
+  font-size: 30px;
+}
+
+.settings-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.settings-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.settings__li {
+  padding: 40px 0;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.settings__setting {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0;
+  font-size: 25px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.05);
+}
+.settings__setting:last-child {
+  border-bottom: none;
+}
+
+.settings__setting-column i {
+  margin-right: 20px;
+}
+
+.second {
+  opacity: 0.4;
+  font-size: 22px;
+}

@@ -45,3 +45,19 @@
   font-weight: 600;
   opacity: 0.5;
 }
+
+.user-component__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 10px;
+}
+
+.user-component__unread-chat {
+  margin-right: 10px;
+}
