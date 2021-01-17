@@ -4,7 +4,7 @@
   text-align: center;
   align-items: center;
   width: 100%;
-  background-color: #f9f9fa;
+  background-color: #191919;
   font-size: 18px;
   font-weight: 600;
   padding: 10px 0px;
@@ -32,17 +32,34 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: #191919;
   position: absolute;
   height: 100vh;
   width: 100vw;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 132px;
+  text-align: center;
   animation: splash 0.4s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 1.5s;
+  text-transform: uppercase;
+}
+
+#splash-screen .text1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background-color: #191919;
+  position: relative;
+  animation: text 1s;
+}
+
+#splash-screen .text2 {
+  font-size: 30px;
+  color: #16a085;
 }
 
 @keyframes splash {
@@ -53,5 +70,20 @@
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes text {
+  0% {
+    color: #191919;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 5px;
+    margin-bottom: -40px;
   }
 }

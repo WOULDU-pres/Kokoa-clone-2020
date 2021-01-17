@@ -19,10 +19,11 @@
 @import "no-mobile.css";
 
 body {
-  color: #2e363e;
+  color: #ecf0f1;
   font-family: "Open Sans", sans-serif;
   padding-top: 30px;
   font-weight: 600;
+  background: #34495e;
 }
 
 .main-screen {
