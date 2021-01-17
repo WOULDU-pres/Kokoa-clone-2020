@@ -3,30 +3,33 @@
 }
 
 .chat-body {
-  background-color: #bacdda;
   height: 11000vh;
 }
 
 .chat-head {
   width: 100%;
   position: fixed;
-  padding: 20px var(--horizontal-space);
+  padding: 15px var(--horizontal-space);
   box-sizing: border-box;
+  z-index: 10;
+  margin-top: -7px;
 }
 
 .chat-head,
-.chat-body .status-bar {
-  background-color: #bacdda;
+.chat-body .status-bar,
+.chat-body {
+  background-color: #34495e;
 }
 .main-chat {
-  padding: var(--horizontal-space);
-  padding-top: 90px;
+  padding: 0 var(--horizontal-space);
+  padding-top: 50px;
   animation: fadeIn 0.8s linear;
 }
 
 .chat-date {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .chat-date span {
@@ -34,7 +37,8 @@
   border-radius: 20px;
   padding: 12px;
   color: whitesmoke;
-  opacity: 0.6;
+  opacity: 0.7;
+  font-size: 12px;
 }
 
 .message-row {
@@ -42,15 +46,14 @@
 }
 
 .message-row img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 20px;
   margin-right: 10px;
 }
 
 .message-row__content {
-  font-size: 18px;
-  color: rgb(0, 0, 0, 0.5);
+  font-size: 15px;
 }
 
 .message__author {
@@ -64,12 +67,12 @@
 }
 
 .message__bubble {
-  background-color: white;
-  padding: 13px;
+  background-color: #7592bd;
+  padding: 10px;
   border-radius: 15px;
-  color: black;
+  color: #ecf0f1;
   margin-right: 5px;
-  font-size: 21px;
+  font-size: 13px;
   margin-top: 3px;
   border-top-left-radius: 0px;
 }
@@ -78,7 +81,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .message-row--own {
@@ -86,10 +89,11 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: #809dbd;
   border-top-right-radius: 0px;
   border-top-left-radius: 15px;
   margin-left: 5px;
+  color: #ecf0f1;
 }
 
 .message-row--own .message__info {
@@ -98,12 +102,12 @@
 
 .reply {
   position: fixed;
-  bottom: 73px;
+  bottom: 65px;
   width: 100%;
-  background-color: white;
+  background-color: #191919;
   display: flex;
   justify-content: space-between;
-  padding: 15px 25px;
+  padding: 10px 20px;
   box-sizing: border-box;
   align-items: center;
   transition: all 0.3s ease-in-out;
@@ -129,10 +133,11 @@
 .reply input {
   padding: 14px;
   width: 100%;
-  border: 1px solid rgb(0, 0, 0, 0.4);
+  border: 1px solid #2980b9;
   border-radius: 25px;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
+  background: #191919;
 }
 
 .reply__column:last-child > i,
@@ -148,7 +153,7 @@
 }
 
 .reply__column button {
-  background-color: var(--yellow);
+  background-color: #4ca8e6;
   border: none;
   width: 40px;
   height: 40px;
@@ -185,8 +190,9 @@
 }
 
 .reply:focus-within input {
-  width: 98vw;
-  transform: translateX(-13%) translateY(-80px);
+  width: 97vw;
+  transform: translateX(-13%) translateY(-73px);
+  height: 60px;
 }
 
 .reply:focus-within {

@@ -2,16 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
 
 .screen-header__title {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .screen-header__icons span {
   margin-left: 20px;
+  font-size: 15px;
 }
 
 @keyframes rotateCog {
