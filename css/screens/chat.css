@@ -194,6 +194,8 @@
   width: 97vw;
   transform: translateX(-13%) translateY(-73px);
   height: 60px;
+  border-color: #16a085;
+  transition: 0.3s ease-in-out;
 }
 
 .reply:focus-within {

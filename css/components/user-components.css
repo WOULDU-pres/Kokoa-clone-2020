@@ -6,7 +6,7 @@
   margin: 8px 0px;
 }
 
-.user-component:hover {
+.user-component:hover:not(.user-component__more) {
   background: #191919;
   border: 2px solid #16a085;
   margin: 6px -20px;
